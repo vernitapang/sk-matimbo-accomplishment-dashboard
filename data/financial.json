@@ -1,0 +1,32 @@
+[
+  {
+    "category": "Education Programs",
+    "amount": "₱850,000",
+    "percentage": "34%",
+    "description": "Leadership training, digital literacy, and skills development"
+  },
+  {
+    "category": "Infrastructure Projects",
+    "amount": "₱650,000",
+    "percentage": "26%",
+    "description": "Community facilities and water access improvements"
+  },
+  {
+    "category": "Health & Wellness",
+    "amount": "₱400,000",
+    "percentage": "16%",
+    "description": "Mental health programs and medical assistance"
+  },
+  {
+    "category": "Environmental Initiatives",
+    "amount": "₱350,000",
+    "percentage": "14%",
+    "description": "Community gardens and sustainability projects"
+  },
+  {
+    "category": "Administrative Costs",
+    "amount": "₱250,000",
+    "percentage": "10%",
+    "description": "Operations, staff, and administrative expenses"
+  }
+]

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangguniang Kabataan ng Matimbo - Accomplishment Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-users"></i>
+                    <h1>Sangguniang Kabataan ng Matimbo</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav-link active">Dashboard</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <h2>Accomplishment Dashboard</h2>
+                <p>Tracking our progress towards sustainable community development</p>
+            </section>
+
+            <section class="dashboard-tiles">
+                <div class="tile projects-tile" onclick="showProjects()">
+                    <div class="tile-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="tile-content">
+                        <h3>Projects</h3>
+                        <div class="tile-number" id="projects-count">12</div>
+                        <p>Active community initiatives</p>
+                    </div>
+                    <div class="tile-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="tile partnerships-tile" onclick="showPartnerships()">
+                    <div class="tile-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="tile-content">
+                        <h3>Partnerships</h3>
+                        <div class="tile-number" id="partnerships-count">8</div>
+                        <p>Collaborative relationships</p>
+                    </div>
+                    <div class="tile-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="tile financial-tile" onclick="showFinancial()">
+                    <div class="tile-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="tile-content">
+                        <h3>Financial Transparency</h3>
+                        <div class="tile-number">₱<span id="budget-amount">2.5M</span></div>
+                        <p>Total budget allocated</p>
+                    </div>
+                    <div class="tile-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="tile awards-tile" onclick="showAwards()">
+                    <div class="tile-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="tile-content">
+                        <h3>Awards</h3>
+                        <div class="tile-number" id="awards-count">5</div>
+                        <p>Recognition and achievements</p>
+                    </div>
+                    <div class="tile-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-grid" id="projects-section" style="display: none;">
+                <div class="section-header">
+                    <h3>Our Projects</h3>
+                    <button class="back-btn" onclick="showDashboard()">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </button>
+                </div>
+                <div class="projects-container" id="projects-container">
+                    <!-- Projects will be loaded dynamically -->
+                </div>
+            </section>
+
+            <section class="partnerships-section" id="partnerships-section" style="display: none;">
+                <div class="section-header">
+                    <h3>Our Partnerships</h3>
+                    <button class="back-btn" onclick="showDashboard()">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </button>
+                </div>
+                <div class="partnerships-container" id="partnerships-container">
+                    <!-- Partnerships will be loaded dynamically -->
+                </div>
+            </section>
+
+            <section class="financial-section" id="financial-section" style="display: none;">
+                <div class="section-header">
+                    <h3>Financial Transparency Report</h3>
+                    <button class="back-btn" onclick="showDashboard()">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </button>
+                </div>
+                <div class="financial-container" id="financial-container">
+                    <!-- Financial reports will be loaded dynamically -->
+                </div>
+            </section>
+
+            <section class="awards-section" id="awards-section" style="display: none;">
+                <div class="section-header">
+                    <h3>Awards & Recognition</h3>
+                    <button class="back-btn" onclick="showDashboard()">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </button>
+                </div>
+                <div class="awards-container" id="awards-container">
+                    <!-- Awards will be loaded dynamically -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sangguniang Kabataan. Committed to transparent governance and community development.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

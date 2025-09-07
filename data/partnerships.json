@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Department of Education",
+    "type": "Government Partnership",
+    "status": "Active",
+    "description": "Collaborative educational programs and youth development initiatives"
+  },
+  {
+    "name": "Local Business Alliance",
+    "type": "Private Sector",
+    "status": "Active",
+    "description": "Skills training and employment opportunities for youth"
+  },
+  {
+    "name": "NGO Health Partners",
+    "type": "Non-Profit Organization",
+    "status": "Active",
+    "description": "Community health and wellness programs"
+  },
+  {
+    "name": "University Research Center",
+    "type": "Academic Institution",
+    "status": "Pending",
+    "description": "Research collaboration on community development"
+  },
+  {
+    "name": "Environmental Foundation",
+    "type": "Environmental NGO",
+    "status": "Active",
+    "description": "Sustainability and environmental protection projects"
+  }
+]

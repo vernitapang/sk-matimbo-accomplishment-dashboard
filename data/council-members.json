@@ -1,0 +1,82 @@
+[
+  {
+    "id": "chairman",
+    "name": "Hon. Kenneth V. Reyes",
+    "position": "SK Chairman",
+    "role": "chairman",
+    "committee": "Executive Committee",
+    "photo": null
+  },
+  {
+    "id": "councilor-1",
+    "name": "Hon. Sophia Loren Hernandez",
+    "position": "SK Councilor",
+    "role": "councilor",
+    "committee": "Committee of Disaster Risk Reduction and Management & Committee of Environment",
+    "photo": null
+  },
+  {
+    "id": "councilor-2",
+    "name": "Hon. Dani Ann Caluag",
+    "position": "SK Councilor",
+    "role": "councilor",
+    "committee": "Committee on Health and Social Services",
+    "photo": null
+  },
+  {
+    "id": "councilor-3",
+    "name": "Hon. Ivan Rick Garcia",
+    "position": "SK Councilor",
+    "role": "councilor",
+    "committee": "Committee on Education",
+    "photo": null
+  },
+  {
+    "id": "councilor-4",
+    "name": "Hon. John Robert Paul P. Espinas",
+    "position": "SK Councilor",
+    "role": "councilor",
+    "committee": "Committee on Sports",
+    "photo": null
+  },
+  {
+    "id": "councilor-5",
+    "name": "Hon. Angelo Joseph A. Nicdao",
+    "position": "SK Councilor",
+    "role": "councilor",
+    "committee": "Committee on Infrastructure and Public Works",
+    "photo": null
+  },
+  {
+    "id": "councilor-6",
+    "name": "Hon. Reiscelle Joshua M. Roque",
+    "position": "SK Councilor",
+    "role": "councilor",
+    "committee": "Committee on Public Safety and Order",
+    "photo": null
+  },
+  {
+    "id": "councilor-7",
+    "name": "Hon. Kaori Dela Cruz",
+    "position": "SK Councilor",
+    "role": "councilor",
+    "committee": "Committee on Public Safety and Order",
+    "photo": null
+  },
+  {
+    "id": "secretary",
+    "name": "Mr. Archolo R. Pingol",
+    "position": "SK Secretary",
+    "role": "secretary",
+    "committee": "Records and Documentation Committee",
+    "photo": null
+  },
+  {
+    "id": "treasurer",
+    "name": "Ms. Bernadette B. Capule",
+    "position": "SK Treasurer",
+    "role": "treasurer",
+    "committee": "Finance and Budget Committee",
+    "photo": null
+  }
+]

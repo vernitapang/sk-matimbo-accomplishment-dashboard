@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Matimboeñong READY: Fire Drill Seminar",
+    "description": "An initiative led by SK Matimbo in partnership with BFP City of Malolos to equip young Matimboeños with proper knowledge and preparedness during fire emergencies. This program fosters safety awareness, readiness, and resilience toward building a stronger and safer community.",
+    "attendees": 69,
+    "status": "Completed",
+    "date": "2025-08-23",
+    "thumbnail": "/data/projects/1/thumbnail.jpg",
+    "images": [
+      "https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/536761457_122203448360109949_3327480577687189128_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEHLA5JAk6Jl7lWmNA667jXZ6TOJKHhn_BnpM4koeGf8IKYE1x6PEU2NSCOLz7flnI&_nc_ohc=jnrfpjhvD_IQ7kNvwGflSs_&_nc_oc=AdnvwUSezxQIePeaO9qk0Z6N3XylgmBut2dtv3ULvSfQIbZQhVTS2yNiyt3WFHsrA0o&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=UYMMhWJIb_ls3aXKjQS9PA&oh=00_AfUS6lgmAO-Uu6xs3bxauI8jTQdPC2KZr1qnlOSuVHRhUg&oe=68B22D64",
+      "https://scontent.fmnl4-8.fna.fbcdn.net/v/t39.30808-6/538633246_24542988808629606_2018160853281167581_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGtPrerWyP6euGbNxjRarlWjp3WcjHrq_OOndZyMeur8660877t94u6LWeNtD2rMFI&_nc_ohc=Z01Wj8DkLToQ7kNvwGXJia9&_nc_oc=Adk4U1eLs_8lTC9RuS7sSPCMVE9M_R7e8TcT0O926Ah2slvdeE3YFz2ADhCFtt8P8_Y&_nc_zt=23&_nc_ht=scontent.fmnl4-8.fna&_nc_gid=ekvjwWJRZDKwi6Rb1w9Taw&oh=00_AfX0A36EXFQpDN4weetQOxlnaStbBnYWh90Af9Y2gaF8ug&oe=68B2288E",
+      "https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/538533869_24542989585296195_8268476036564993570_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH_UW5ydC9zSY3IPktdCqj5GCQ7-GQyVSQYJDv4ZDJVJELJJBWP6lYOjKLmsxSxM6Y&_nc_ohc=64vJgUUIBYUQ7kNvwEM9fRL&_nc_oc=Adk9L7R5vJ8h4xh_0Vi-lP4gX8zlEsiME3EiObcrRw0bjHA29QhzPDcl0DnU_wM90gE&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=NcMxp1EYxDiJtLHtZo_Rpw&oh=00_AfUBdmOVQRPnmBsSdw8luCDgKj-PT5fyYObsmpCBYe_7Ug&oe=68B2232D",
+      "https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/538778087_24542988245296329_7915431600749811664_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFcuwKsxS2Klv5pq0gX1G5WbPicaWKJKgVs-JxpYokqBdU6sxcSiCH_mGCw68XJBs8&_nc_ohc=yxnaXADg7ZwQ7kNvwEk7EJa&_nc_oc=Adm2YlW0CF9UhMCIBlP0GeMHAytRR-5OPQWfqMBsmOrdPsNG0a2C6yNCr2JGhd37qr0&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=UlBQqnqn8Jq8bbgW7PzdAA&oh=00_AfXn-tSUH9ugvnawMAKiot51IqCGDG8-fIw8STeWpBswYA&oe=68B23092"
+    ],
+    "duration": "One Day",
+    "budget": "₱12,000",
+    "location": "GITMES School",
+    "sdgs": [3, 11, 13],
+    "committeeId": "drrrm-and-environment"
+  },
+  {
+    "id": 2,
+    "title": "Ready na ba Youth? Building Environmental and Disaster Resiliency in Matimbo",
+    "description": "Bilang bahagi ng Linggo ng Kabataan 2024, nagsagawa ang Sangguniang Kabataan ng Matimbo ng Environmental Seminar at Training noong Agosto 24, 2024. Layunin nito na palalimin ang kaalaman ng mga kabataan tungkol sa pangangalaga ng kalikasan at pagsusulong ng mas ligtas at maayos na komunidad. Ang proyektong ito ay pinangunahan ng Committee on DRRM & Environment, katuwang ang buong SK Council ng Matimbo at ang City of Malolos Disaster Risk Reduction Management Office (CDRRMO).",
+    "attendees": 20,
+    "status": "Completed",
+    "date": "2024-08-24",
+    "thumbnail": "/data/projects/2/thumbnail.jpg",
+    "images": [
+      "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/example1.jpg",
+      "https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/example2.jpg",
+      "https://scontent.fmnl4-5.fna.fbcdn.net/v/t39.30808-6/example3.jpg",
+      "https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/example4.jpg"
+    ],
+    "duration": "One Day",
+    "budget": "₱20,000",
+    "location": "GITMES School",
+    "sdgs": [3, 4, 11, 13, 17],
+    "committeeId": "drrrm-and-environment"
+  }
+]
