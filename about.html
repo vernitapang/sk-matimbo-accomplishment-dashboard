@@ -10,32 +10,30 @@
     <script src="about.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
+    <header class="header">
+        <div class="container">
             <div class="header-content">
-                <div class="header-left">
-                    <h1>
-                        <i class="fas fa-users"></i>
-                        About Our Council
-                    </h1>
-                    <p>Meet the dedicated members of Sangguniang Kabataan ng Matimbo</p>
+                <div class="logo">
+                    <i class="fas fa-users"></i>
+                    <h1>Sangguniang Kabataan ng Matimbo</h1>
                 </div>
-                <div class="header-right">
-                    <button onclick="window.location.href='index.html'" class="btn-back">
-                        <i class="fas fa-arrow-left"></i>
-                        Back to Dashboard
-                    </button>
-                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="#" class="nav-link active">About</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
             </div>
-        </header>
+        </div>
+    </header>
 
+    <div class="container">
         <main class="main-content">
             <!-- SK Chairman Section -->
             <section class="council-section chairman-section">
                 <div class="section-header">
                     <h2><i class="fas fa-crown"></i> SK Chairman</h2>
                 </div>
-                <div class="member-card chairman-card">
+                <div class="chairman-card">
                     <!-- Chairman will be loaded dynamically -->
                 </div>
             </section>
