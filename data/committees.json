@@ -1,7 +1,7 @@
 {
   "drrrm-and-environment": {
     "name": "Committee of Disaster Risk Reduction and Management & Committee of Environment",
-    "shortenedName": "DRRRM & Environment",
+    "committeeSlug": "DRRRM & Environment",
     "committeeColor": "#008000",
     "chairperson": "Hon. Sophia Loren Hernandez",
     "coChairperson": "Hon. Joshua Rescielle Roque",
@@ -9,7 +9,7 @@
   },
   "education": {
     "name": "Committee on Education",
-    "shortenedName": "Education",
+    "committeeSlug": "Education",
     "committeeColor": "#000000",
     "chairperson": "Hon. Ivan Rick Garcia",
     "coChairperson": "Hon. ",

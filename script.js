@@ -97,7 +97,7 @@ function loadProjects() {
         // Get committee info
         const committee = committeesData[project.committeeId];
         const committeeColor = committee.committeeColor;
-        const committeeName = committee.shortenedName;
+        const committeeName = committee.committeeSlug;
         
         projectCard.innerHTML = `
             <div class="project-image">
