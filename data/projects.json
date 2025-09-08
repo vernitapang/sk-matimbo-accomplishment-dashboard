@@ -7,13 +7,9 @@
     "attendees": 69,
     "status": "Completed",
     "date": "2025-08-23",
-    "thumbnail": "./data/projects/1/thumbnail.jpg",
+    "thumbnail": "./projects/matimboeñong-ready-fire-drill-seminar/thumbnail.jpg",
     "images": [
-      "./data/projects/1/thumbnail.jpg",
-      "./data/projects/1/thumbnail.jpg",
-      "./data/projects/1/thumbnail.jpg",
-      "./data/projects/1/thumbnail.jpg",
-      "./data/projects/1/thumbnail.jpg"
+      "./projects/matimboeñong-ready-fire-drill-seminar/thumbnail.jpg"
     ],
     "duration": "One Day",
     "budget": "₱12,000",
@@ -29,9 +25,9 @@
     "attendees": 20,
     "status": "Completed",
     "date": "2024-08-24",
-    "thumbnail": "./data/projects/2/thumbnail.jpg",
+    "thumbnail": "./projects/environmental-and-disaster-resiliency-training/thumbnail.jpg",
     "images": [
-      "./data/projects/2/thumbnail.jpg"
+      "./projects/environmental-and-disaster-resiliency-training/thumbnail.jpg"
     ],
     "duration": "One Day",
     "budget": "₱20,000",
