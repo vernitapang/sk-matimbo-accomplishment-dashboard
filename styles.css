@@ -76,6 +76,41 @@ body {
     color: white;
 }
 
+/* Hamburger Menu */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #2c3e50;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 /* Main content */
 .main {
     padding: 2rem 0;
@@ -224,14 +259,29 @@ body {
 }
 
 .tile-arrow {
-    font-size: 1.2rem;
-    color: #bdc3c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 50%;
+    flex-shrink: 0;
     transition: all 0.3s ease;
 }
 
-.tile:hover .tile-arrow {
+.tile-arrow i {
+    font-size: 0.9rem;
     color: #2563eb;
+}
+
+.tile:hover .tile-arrow {
+    background: #2563eb;
     transform: translateX(4px);
+}
+
+.tile:hover .tile-arrow i {
+    color: white;
 }
 
 /* Section headers */
@@ -447,6 +497,39 @@ body {
     flex-shrink: 0;
     width: 80px;
     text-align: center;
+}
+
+/* Mobile Award Styles */
+@media (max-width: 768px) {
+    .award-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+    
+    .award-icon {
+        font-size: 3.5rem;
+        width: 90px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .award-info h4 {
+        justify-content: center;
+    }
+    
+    .award-meta {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .award-icon {
+        font-size: 3rem;
+        width: 80px;
+    }
 }
 
 .award-info {
@@ -865,6 +948,55 @@ body {
     .credits-icon {
         margin-bottom: 1rem;
     }
+    
+    /* Mobile Partnership and Financial Items */
+    .partnership-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .financial-item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .partnership-info {
+        width: 100%;
+    }
+    
+    .financial-info {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .financial-info h4 {
+        font-size: 1rem;
+    }
+    
+    .financial-info p {
+        font-size: 0.85rem;
+    }
+    
+    .partnership-status {
+        align-self: flex-start;
+    }
+    
+    .financial-amount {
+        text-align: right;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+    
+    .financial-amount > div:first-child {
+        font-size: 1.1rem;
+    }
+    
+    .financial-amount > div:last-child {
+        font-size: 0.8rem;
+    }
 }
 
 .partnership-info h4,
@@ -943,16 +1075,48 @@ body {
 /* Responsive design */
 @media (max-width: 768px) {
     .header-content {
-        flex-direction: column;
-        gap: 1rem;
+        position: relative;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
     }
 
     .nav {
-        gap: 1rem;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 8px;
+        z-index: 1000;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem;
     }
 
     .hero h2 {
         font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     .dashboard-tiles {
@@ -961,13 +1125,51 @@ body {
     }
 
     .tile {
-        padding: 1.5rem;
+        padding: 1.2rem;
+        justify-content: flex-start;
+    }
+
+    .tile-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .tile-content {
+        text-align: left;
+    }
+
+    .tile-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tile-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 0.25rem;
+        line-height: 1;
+    }
+    
+    .tile-content p {
+        display: block;
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+
+    .tile-arrow {
+        margin-left: auto;
     }
 
     .section-header {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+    }
+    
+    .back-btn {
+        display: none;
     }
 
     .projects-container {
@@ -980,19 +1182,63 @@ body {
         padding: 0 15px;
     }
 
+    .logo {
+        gap: 8px;
+    }
+
+    .logo i {
+        font-size: 1.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
     .tile {
-        flex-direction: column;
-        text-align: center;
+        padding: 1rem;
+        flex-direction: row;
         gap: 1rem;
     }
 
-    .tile-content {
-        order: 2;
+    .tile-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .tile-content h3 {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .tile-number {
+        font-size: 2rem;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 0.2rem;
+    }
+
+    .tile-content p {
+        font-size: 0.75rem;
+        display: block;
+        line-height: 1.2;
     }
 
     .tile-arrow {
-        order: 3;
-        transform: rotate(90deg);
+        width: 32px;
+        height: 32px;
+    }
+
+    .tile-arrow i {
+        font-size: 0.8rem;
     }
 }
 

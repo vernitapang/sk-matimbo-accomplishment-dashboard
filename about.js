@@ -1,6 +1,36 @@
 // Council members data
 let councilMembersData = [];
 
+// Mobile menu toggle
+function initMobileMenu() {
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileMenuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+        
+        // Close menu when clicking on a nav link
+        const navLinks = navMenu.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+}
+
 // Load council members data when page loads
 async function loadCouncilMembers() {
     try {
@@ -113,4 +143,7 @@ function displayOfficers(officers) {
 }
 
 // Load data when page loads
-document.addEventListener('DOMContentLoaded', loadCouncilMembers);
+document.addEventListener('DOMContentLoaded', () => {
+    initMobileMenu();
+    loadCouncilMembers();
+});
