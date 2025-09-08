@@ -40,10 +40,25 @@ function getSdgById(sdgId) {
 }
 
 
-// Load project details based on selected project ID
+// Load project details based on URL hash or localStorage
 function loadProjectDetail() {
-    const projectId = parseInt(localStorage.getItem('selectedProjectId'));
-    const project = projectsData.find(p => p.id === projectId);
+    let project = null;
+    
+    // Try to get project from hash URL first
+    const hash = window.location.hash;
+    if (hash && hash.startsWith('#/')) {
+        // Extract slug from hash (e.g., #/project-slug)
+        const projectSlug = hash.substring(2); // Remove '#/' prefix
+        if (projectSlug) {
+            project = projectsData.find(p => p.projectSlug === projectSlug);
+        }
+    }
+    
+    // Fallback to localStorage if no hash route
+    if (!project) {
+        const projectId = parseInt(localStorage.getItem('selectedProjectId'));
+        project = projectsData.find(p => p.id === projectId);
+    }
     
     if (!project) {
         document.getElementById('project-detail').innerHTML = `
@@ -164,19 +179,21 @@ function loadProjectDetail() {
             </div>
         </div>
         
-        <div class="project-gallery">
-            <h4>Project Gallery</h4>
-            <div class="gallery-grid">
-                ${project.images.map((image, index) => `
-                    <div class="gallery-item" onclick="openImageModal('${image}', '${project.title}', ${index + 1})" style="position: relative; cursor: pointer; border-radius: 8px; overflow: hidden;">
-                        <img src="${image}" alt="${project.title} - Image ${index + 1}" style="width: 100%; height: 200px; object-fit: cover;">
-                        <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
-                            ${index + 1}/${project.images.length}
+        ${project.images && project.images.length > 0 ? `
+            <div class="project-gallery">
+                <h4>Project Gallery</h4>
+                <div class="gallery-grid">
+                    ${project.images.map((image, index) => `
+                        <div class="gallery-item" onclick="openImageModal('${image}', '${project.title}', ${index + 1})" style="position: relative; cursor: pointer; border-radius: 8px; overflow: hidden;">
+                            <img src="${image}" alt="${project.title} - Image ${index + 1}" style="width: 100%; height: 200px; object-fit: cover;">
+                            <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
+                                ${index + 1}/${project.images.length}
+                            </div>
                         </div>
-                    </div>
-                `).join('')}
+                    `).join('')}
+                </div>
             </div>
-        </div>
+        ` : ''}
     `;
     
     document.getElementById('project-detail').innerHTML = projectDetailHtml;

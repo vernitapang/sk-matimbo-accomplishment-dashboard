@@ -337,10 +337,16 @@ function createBudgetPieChart() {
 
 // Open project detail page
 function openProjectDetail(projectId) {
-    // Store project ID in localStorage for the detail page
-    localStorage.setItem('selectedProjectId', projectId);
-    // Navigate to project detail page
-    window.location.href = 'project-detail.html';
+    // Find the project to get its slug
+    const project = projectsData.find(p => p.id === projectId);
+    if (project && project.projectSlug) {
+        // Use hash routing for compatibility with GitHub Pages
+        window.location.href = `project.html#/${project.projectSlug}`;
+    } else {
+        // Fallback to localStorage method
+        localStorage.setItem('selectedProjectId', projectId);
+        window.location.href = 'project.html';
+    }
 }
 
 // Update dashboard stats
