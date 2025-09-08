@@ -6,7 +6,7 @@
     "attendees": 69,
     "status": "Completed",
     "date": "2025-08-23",
-    "thumbnail": "/data/projects/1/thumbnail.jpg",
+    "thumbnail": "./data/projects/1/thumbnail.jpg",
     "images": [
       "https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/536761457_122203448360109949_3327480577687189128_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEHLA5JAk6Jl7lWmNA667jXZ6TOJKHhn_BnpM4koeGf8IKYE1x6PEU2NSCOLz7flnI&_nc_ohc=jnrfpjhvD_IQ7kNvwGflSs_&_nc_oc=AdnvwUSezxQIePeaO9qk0Z6N3XylgmBut2dtv3ULvSfQIbZQhVTS2yNiyt3WFHsrA0o&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=UYMMhWJIb_ls3aXKjQS9PA&oh=00_AfUS6lgmAO-Uu6xs3bxauI8jTQdPC2KZr1qnlOSuVHRhUg&oe=68B22D64",
       "https://scontent.fmnl4-8.fna.fbcdn.net/v/t39.30808-6/538633246_24542988808629606_2018160853281167581_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGtPrerWyP6euGbNxjRarlWjp3WcjHrq_OOndZyMeur8660877t94u6LWeNtD2rMFI&_nc_ohc=Z01Wj8DkLToQ7kNvwGXJia9&_nc_oc=Adk4U1eLs_8lTC9RuS7sSPCMVE9M_R7e8TcT0O926Ah2slvdeE3YFz2ADhCFtt8P8_Y&_nc_zt=23&_nc_ht=scontent.fmnl4-8.fna&_nc_gid=ekvjwWJRZDKwi6Rb1w9Taw&oh=00_AfX0A36EXFQpDN4weetQOxlnaStbBnYWh90Af9Y2gaF8ug&oe=68B2288E",
@@ -26,7 +26,7 @@
     "attendees": 20,
     "status": "Completed",
     "date": "2024-08-24",
-    "thumbnail": "/data/projects/2/thumbnail.jpg",
+    "thumbnail": "./data/projects/2/thumbnail.jpg",
     "images": [
       "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/example1.jpg",
       "https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/example2.jpg",
