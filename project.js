@@ -6,17 +6,25 @@ let sdgData = [];
 // Load all data when page loads
 document.addEventListener('DOMContentLoaded', async function() {
     try {
+        console.log('Loading data files...');
+        
         // Load projects data
         const projectsResponse = await fetch('./data/projects.json');
+        if (!projectsResponse.ok) throw new Error(`Failed to load projects: ${projectsResponse.status}`);
         projectsData = await projectsResponse.json();
+        console.log('Projects loaded:', projectsData.length);
         
         // Load committees data
         const committeesResponse = await fetch('./data/committees.json');
+        if (!committeesResponse.ok) throw new Error(`Failed to load committees: ${committeesResponse.status}`);
         committeesData = await committeesResponse.json();
         
         // Load SDG data
         const sdgResponse = await fetch('./data/sdg.json');
+        if (!sdgResponse.ok) throw new Error(`Failed to load SDG data: ${sdgResponse.status}`);
         sdgData = await sdgResponse.json();
+        
+        console.log('All data loaded successfully');
         
         // Load project details
         loadProjectDetail();
@@ -26,6 +34,16 @@ document.addEventListener('DOMContentLoaded', async function() {
         initializeKeyboardNavigation();
     } catch (error) {
         console.error('Error loading data:', error);
+        document.getElementById('project-detail').innerHTML = `
+            <div style="text-align: center; padding: 3rem; color: #7f8c8d;">
+                <i class="fas fa-exclamation-triangle" style="font-size: 3rem; margin-bottom: 1rem; color: #f39c12;"></i>
+                <h3>Error Loading Data</h3>
+                <p>${error.message}</p>
+                <button class="back-btn" onclick="window.location.href='index.html'" style="margin-top: 1rem;">
+                    <i class="fas fa-arrow-left"></i> Back to Dashboard
+                </button>
+            </div>
+        `;
     }
 });
 
@@ -46,17 +64,24 @@ function loadProjectDetail() {
     
     // Try to get project from hash URL first
     const hash = window.location.hash;
+    console.log('Current hash:', hash);
+    
     if (hash && hash.startsWith('#/')) {
         // Extract slug from hash (e.g., #/project-slug)
-        const projectSlug = hash.substring(2); // Remove '#/' prefix
+        const projectSlug = decodeURIComponent(hash.substring(2)); // Remove '#/' prefix and decode URL
+        console.log('Looking for project with slug:', projectSlug);
+        console.log('Available projects:', projectsData.map(p => p.projectSlug));
+        
         if (projectSlug) {
             project = projectsData.find(p => p.projectSlug === projectSlug);
+            console.log('Found project:', project ? project.title : 'Not found');
         }
     }
     
     // Fallback to localStorage if no hash route
     if (!project) {
         const projectId = parseInt(localStorage.getItem('selectedProjectId'));
+        console.log('Fallback to localStorage ID:', projectId);
         project = projectsData.find(p => p.id === projectId);
     }
     
