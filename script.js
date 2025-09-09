@@ -146,7 +146,7 @@ function loadProjects() {
                 <div class="project-meta">
                     <div class="attendees">
                         <i class="fas fa-users"></i>
-                        <span>${project.attendees} attendees</span>
+                        <span>${project.attendees || project.respondents || project.recipients || 0}</span>
                     </div>
                     <div class="committee-badge" style="background-color: ${committeeColor}; color: white;" title="${committee.name}">
                         ${committeeName}

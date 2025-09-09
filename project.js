@@ -110,8 +110,16 @@ async function loadProjectDetail() {
                 <div class="detail-value">${project.location}</div>
             </div>
             <div class="detail-card" style="background: #f8f9fa; padding: 1rem; border-radius: 8px;">
-                <div class="detail-label" style="font-weight: 600; margin-bottom: 0.25rem;">Attendees</div>
-                <div class="detail-value">${project.attendees} participants</div>
+                <div class="detail-label" style="font-weight: 600; margin-bottom: 0.25rem;">${
+                    project.attendees ? 'Attendees' : 
+                    project.respondents ? 'Respondents' : 
+                    project.recipients ? 'Recipients' : 'Participants'
+                }</div>
+                <div class="detail-value">${project.attendees || project.respondents || project.recipients || 0} ${
+                    project.attendees ? 'participants' : 
+                    project.respondents ? 'respondents' : 
+                    project.recipients ? 'recipients' : 'participants'
+                }</div>
             </div>
             <div class="detail-card" style="background: #f8f9fa; padding: 1rem; border-radius: 8px;">
                 <div class="detail-label" style="font-weight: 600; margin-bottom: 0.25rem;">Budget</div>
@@ -149,8 +157,12 @@ async function loadProjectDetail() {
             <h4 style="margin-bottom: 1rem; color: #2c3e50;">Project Impact</h4>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
                 <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; text-align: center;">
-                    <div style="font-size: 2rem; font-weight: 700; color: #e74c3c; margin-bottom: 0.5rem;">${project.attendees}</div>
-                    <div style="color: #7f8c8d; font-size: 0.9rem;">People Reached</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: #e74c3c; margin-bottom: 0.5rem;">${project.attendees || project.respondents || project.recipients || 0}</div>
+                    <div style="color: #7f8c8d; font-size: 0.9rem;">${
+                        project.attendees ? 'People Reached' : 
+                        project.respondents ? 'Respondents' : 
+                        project.recipients ? 'Recipients' : 'Participants'
+                    }</div>
                 </div>
                 <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; text-align: center;">
                     <div style="font-size: 2rem; font-weight: 700; color: #27ae60; margin-bottom: 0.5rem;">${project.budget}</div>

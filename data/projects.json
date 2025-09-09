@@ -8,7 +8,7 @@
     "images": [
       "thumbnail.jpg"
     ],
-    "attendees": 69,
+    "respondents": 69,
     "status": "Completed",
     "date": "2025-08-23",
     "duration": "One Day",
@@ -26,7 +26,7 @@
     "images": [
       "thumbnail.jpg"
     ],
-    "attendees": 20,
+    "respondents": 20,
     "status": "Completed",
     "date": "2024-08-24",
     "duration": "One Day",
@@ -44,7 +44,7 @@
     "images": [
       "thumbnail.jpg"
     ],
-    "attendees": 76,
+    "recipients": 76,
     "status": "Completed",
     "date": "2025-08-28",
     "duration": "5 Days",
