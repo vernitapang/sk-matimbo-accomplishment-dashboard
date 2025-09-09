@@ -8,11 +8,11 @@
     "members": ["Hon. Ivan Rick Garcia", "Hon. John Robert Paul Espinas"]
   },
   "education": {
-    "name": "Committee on Education",
-    "committeeSlug": "Education",
-    "committeeColor": "#000000",
+    "name": "Committee on Education and Development Projects",
+    "committeeSlug": "Education & DP",
+    "committeeColor": "#3498db",
     "chairperson": "Hon. Ivan Rick Garcia",
-    "coChairperson": "Hon. ",
-    "members": ["SK Member Lisa Chen", "SK Member Mark Rivera", "SK Member Sofia Gonzales"]
+    "coChairperson": "Hon. Kaori Yumi Dela Cruz",
+    "members": ["SK Member Egie Espinas", "SK Member Gelo Nicdao"]
   }
 }

@@ -34,5 +34,23 @@
     "location": "GITMES School",
     "sdgs": [3, 4, 11, 13, 17],
     "committeeId": "drrrm-and-environment"
+  },
+  {
+    "id": 3,
+    "title": "iSKolar ako, Dahil Matimboeño ako",
+    "description": "iSKolar AKO, DAHIL MATIMBOEÑO AKO! – A Scholarship Financial Aid Program of SK Matimbo supporting student-athletes, artists, working students, honor students, and volunteers, fostering inclusive education and youth empowerment.",
+    "projectSlug": "iskolar-ako-dahil-matimboeno-ako",
+    "attendees": 76,
+    "status": "Completed",
+    "date": "2025-08-28",
+    "thumbnail": "./projects/iskolar-ako-dahil-matimboeno-ako/thumbnail.jpg",
+    "images": [
+      "./projects/iskolar-ako-dahil-matimboeno-ako/thumbnail.jpg"
+    ],
+    "duration": "5 Days",
+    "budget": "₱76,000",
+    "location": "Baranggay Hall",
+    "sdgs": [4, 8, 10],
+    "committeeId": "education"
   }
 ]
