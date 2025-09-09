@@ -5,6 +5,9 @@
     "projectPath": "./projects/matimboeñong-ready-fire-drill-seminar",
     "shortDescription": "An initiative in partnership with BFP Malolos to equip young Matimboeños with proper knowledge and preparedness during fire emergencies.",
     "projectSlug": "matimboeñong-ready-fire-drill-seminar",
+    "images": [
+      "thumbnail.jpg"
+    ],
     "attendees": 69,
     "status": "Completed",
     "date": "2025-08-23",
@@ -20,6 +23,9 @@
     "projectPath": "./projects/environmental-and-disaster-resiliency-training",
     "shortDescription": "Environmental seminar and training as part of Linggo ng Kabataan 2024 to deepen youth knowledge about environmental care and community safety.",
     "projectSlug": "environmental-and-disaster-resiliency-training",
+    "images": [
+      "thumbnail.jpg"
+    ],
     "attendees": 20,
     "status": "Completed",
     "date": "2024-08-24",
@@ -36,8 +42,7 @@
     "shortDescription": "A scholarship financial aid program supporting student-athletes, artists, working students, honor students, and volunteers.",
     "projectSlug": "iskolar-ako-dahil-matimboeno-ako",
     "images": [
-      "./projects/iskolar-ako-dahil-matimboeno-ako/thumbnail.jpg",
-      "./projects/iskolar-ako-dahil-matimboeno-ako/1.jpeg"
+      "thumbnail.jpg"
     ],
     "attendees": 76,
     "status": "Completed",

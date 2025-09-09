@@ -99,11 +99,6 @@ async function loadProjectDetail() {
         return;
     }
     
-    // Construct images array from projectPath if not provided
-    if (!project.images || project.images.length === 0) {
-        project.images = [`${project.projectPath}/thumbnail.jpg`];
-    }
-    
     const projectDetailHtml = `
         <div class="project-detail-header">
             <h1 class="project-detail-title">${project.title}</h1>
@@ -216,8 +211,8 @@ async function loadProjectDetail() {
                 <h4>Project Gallery</h4>
                 <div class="gallery-grid">
                     ${project.images.map((image, index) => `
-                        <div class="gallery-item" onclick="openImageModal('${image}', '${project.title}', ${index + 1})" style="position: relative; cursor: pointer; border-radius: 8px; overflow: hidden;">
-                            <img src="${image}" alt="${project.title} - Image ${index + 1}" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="gallery-item" onclick="openImageModal('${project.projectPath}/${image}', '${project.title}', ${index + 1})" style="position: relative; cursor: pointer; border-radius: 8px; overflow: hidden;">
+                            <img src="${project.projectPath}/${image}" alt="${project.title} - Image ${index + 1}" style="width: 100%; height: 200px; object-fit: cover;">
                             <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem;">
                                 ${index + 1}/${project.images.length}
                             </div>
