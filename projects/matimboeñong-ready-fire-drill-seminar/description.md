@@ -1,0 +1,1 @@
+An initiative led by **SK Matimbo** in partnership with **BFP – City of Malolos Fire Protection Offices** to equip young Matimboeños with proper knowledge and preparedness during fire emergencies. 

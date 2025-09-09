@@ -1,0 +1,3 @@
+Bilang bahagi ng **Linggo ng Kabataan 2024**, nagsagawa ang Sangguniang Kabataan ng Matimbo ng Environmental Seminar at Training noong Agosto 24, 2024. Layunin nito na palalimin ang kaalaman ng mga kabataan tungkol sa pangangalaga ng kalikasan at pagsusulong ng mas ligtas at maayos na komunidad. 
+<br><br>
+Ang proyektong ito ay pinangunahan ng Committee on DRRM & Environment, katuwang ang buong SK Council ng Matimbo at ang City of Malolos Disaster Risk Reduction Management Office (CDRRMO).

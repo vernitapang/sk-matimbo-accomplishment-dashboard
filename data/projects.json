@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Matimboeñong READY: Fire Drill Seminar",
-    "description": "An initiative led by SK Matimbo in partnership with BFP City of Malolos to equip young Matimboeños with proper knowledge and preparedness during fire emergencies. This program fosters safety awareness, readiness, and resilience toward building a stronger and safer community.",
+    "description": "./projects/matimboeñong-ready-fire-drill-seminar/description.md",
     "projectSlug": "matimboeñong-ready-fire-drill-seminar",
     "attendees": 69,
     "status": "Completed",
@@ -20,7 +20,7 @@
   {
     "id": 2,
     "title": "Ready na ba Youth? Building Environmental and Disaster Resiliency in Matimbo",
-    "description": "Bilang bahagi ng Linggo ng Kabataan 2024, nagsagawa ang Sangguniang Kabataan ng Matimbo ng Environmental Seminar at Training noong Agosto 24, 2024. Layunin nito na palalimin ang kaalaman ng mga kabataan tungkol sa pangangalaga ng kalikasan at pagsusulong ng mas ligtas at maayos na komunidad. Ang proyektong ito ay pinangunahan ng Committee on DRRM & Environment, katuwang ang buong SK Council ng Matimbo at ang City of Malolos Disaster Risk Reduction Management Office (CDRRMO).",
+    "description": "./projects/environmental-and-disaster-resiliency-training/description.md",
     "projectSlug": "environmental-and-disaster-resiliency-training",
     "attendees": 20,
     "status": "Completed",
@@ -38,7 +38,7 @@
   {
     "id": 3,
     "title": "iSKolar ako, Dahil Matimboeño ako",
-    "description": "iSKolar AKO, DAHIL MATIMBOEÑO AKO! – A Scholarship Financial Aid Program of SK Matimbo supporting student-athletes, artists, working students, honor students, and volunteers, fostering inclusive education and youth empowerment.",
+    "description": "./projects/iskolar-ako-dahil-matimboeno-ako/description.md",
     "projectSlug": "iskolar-ako-dahil-matimboeno-ako",
     "attendees": 76,
     "status": "Completed",

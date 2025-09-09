@@ -59,7 +59,7 @@ function getSdgById(sdgId) {
 
 
 // Load project details based on URL hash or localStorage
-function loadProjectDetail() {
+async function loadProjectDetail() {
     let project = null;
     
     // Try to get project from hash URL first
@@ -125,7 +125,9 @@ function loadProjectDetail() {
 
         <div class="project-detail-description" style="margin: 2rem 0;">
             <h3 style="margin-bottom: 1rem; color: #2c3e50;">Project Description</h3>
-            <p>${project.description}</p>
+            <div id="project-description-content">
+                <p></p>
+            </div>
         </div>
         
         <div class="project-sdgs" style="margin: 2rem 0;">
@@ -222,6 +224,27 @@ function loadProjectDetail() {
     `;
     
     document.getElementById('project-detail').innerHTML = projectDetailHtml;
+    
+    // Load and render markdown description
+    if (project.description && project.description.endsWith('.md')) {
+        try {
+            const response = await fetch(project.description);
+            if (response.ok) {
+                const markdown = await response.text();
+                const htmlContent = marked.parse(markdown);
+                document.getElementById('project-description-content').innerHTML = htmlContent;
+            } else {
+                // Fallback to plain text if markdown file not found
+                document.getElementById('project-description-content').innerHTML = `<p>${project.description}</p>`;
+            }
+        } catch (error) {
+            console.error('Error loading markdown:', error);
+            document.getElementById('project-description-content').innerHTML = `<p>${project.description}</p>`;
+        }
+    } else {
+        // If not a markdown file, display as plain text
+        document.getElementById('project-description-content').innerHTML = `<p>${project.description}</p>`;
+    }
     
     // Update page title
     document.title = `${project.title} - SK Matimbo`;
