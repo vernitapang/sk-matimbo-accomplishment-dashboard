@@ -2,15 +2,12 @@
   {
     "id": 1,
     "title": "Matimboeñong READY: Fire Drill Seminar",
-    "description": "./projects/matimboeñong-ready-fire-drill-seminar/description.md",
+    "projectPath": "./projects/matimboeñong-ready-fire-drill-seminar",
+    "shortDescription": "An initiative in partnership with BFP Malolos to equip young Matimboeños with proper knowledge and preparedness during fire emergencies.",
     "projectSlug": "matimboeñong-ready-fire-drill-seminar",
     "attendees": 69,
     "status": "Completed",
     "date": "2025-08-23",
-    "thumbnail": "./projects/matimboeñong-ready-fire-drill-seminar/thumbnail.jpg",
-    "images": [
-      "./projects/matimboeñong-ready-fire-drill-seminar/thumbnail.jpg"
-    ],
     "duration": "One Day",
     "budget": "₱12,000",
     "location": "GITMES School",
@@ -20,15 +17,12 @@
   {
     "id": 2,
     "title": "Ready na ba Youth? Building Environmental and Disaster Resiliency in Matimbo",
-    "description": "./projects/environmental-and-disaster-resiliency-training/description.md",
+    "projectPath": "./projects/environmental-and-disaster-resiliency-training",
+    "shortDescription": "Environmental seminar and training as part of Linggo ng Kabataan 2024 to deepen youth knowledge about environmental care and community safety.",
     "projectSlug": "environmental-and-disaster-resiliency-training",
     "attendees": 20,
     "status": "Completed",
     "date": "2024-08-24",
-    "thumbnail": "./projects/environmental-and-disaster-resiliency-training/thumbnail.jpg",
-    "images": [
-      "./projects/environmental-and-disaster-resiliency-training/thumbnail.jpg"
-    ],
     "duration": "One Day",
     "budget": "₱20,000",
     "location": "GITMES School",
@@ -38,15 +32,16 @@
   {
     "id": 3,
     "title": "iSKolar ako, Dahil Matimboeño ako",
-    "description": "./projects/iskolar-ako-dahil-matimboeno-ako/description.md",
+    "projectPath": "./projects/iskolar-ako-dahil-matimboeno-ako",
+    "shortDescription": "A scholarship financial aid program supporting student-athletes, artists, working students, honor students, and volunteers.",
     "projectSlug": "iskolar-ako-dahil-matimboeno-ako",
+    "images": [
+      "./projects/iskolar-ako-dahil-matimboeno-ako/thumbnail.jpg",
+      "./projects/iskolar-ako-dahil-matimboeno-ako/1.jpeg"
+    ],
     "attendees": 76,
     "status": "Completed",
     "date": "2025-08-28",
-    "thumbnail": "./projects/iskolar-ako-dahil-matimboeno-ako/thumbnail.jpg",
-    "images": [
-      "./projects/iskolar-ako-dahil-matimboeno-ako/thumbnail.jpg"
-    ],
     "duration": "5 Days",
     "budget": "₱76,000",
     "location": "Baranggay Hall",

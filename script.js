@@ -131,15 +131,18 @@ function loadProjects() {
         const committeeColor = committee.committeeColor;
         const committeeName = committee.committeeSlug;
         
+        // Construct paths from projectPath
+        const thumbnail = project.thumbnail || `${project.projectPath}/thumbnail.jpg`;
+        
         projectCard.innerHTML = `
             <div class="project-image">
-                <img src="${project.thumbnail}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="${thumbnail}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="project-content">
                 <div class="project-header">
                     <h4 class="project-title">${project.title}</h4>
                 </div>
-                <p class="project-description">${project.description.substring(0, 120)}...</p>
+                <p class="project-description">${project.shortDescription || ''}</p>
                 <div class="project-meta">
                     <div class="attendees">
                         <i class="fas fa-users"></i>

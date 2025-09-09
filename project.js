@@ -99,6 +99,11 @@ async function loadProjectDetail() {
         return;
     }
     
+    // Construct images array from projectPath if not provided
+    if (!project.images || project.images.length === 0) {
+        project.images = [`${project.projectPath}/thumbnail.jpg`];
+    }
+    
     const projectDetailHtml = `
         <div class="project-detail-header">
             <h1 class="project-detail-title">${project.title}</h1>
@@ -225,25 +230,28 @@ async function loadProjectDetail() {
     
     document.getElementById('project-detail').innerHTML = projectDetailHtml;
     
+    // Construct description path from projectPath
+    const descriptionPath = project.description || `${project.projectPath}/description.md`;
+    
     // Load and render markdown description
-    if (project.description && project.description.endsWith('.md')) {
+    if (descriptionPath && descriptionPath.endsWith('.md')) {
         try {
-            const response = await fetch(project.description);
+            const response = await fetch(descriptionPath);
             if (response.ok) {
                 const markdown = await response.text();
                 const htmlContent = marked.parse(markdown);
                 document.getElementById('project-description-content').innerHTML = htmlContent;
             } else {
-                // Fallback to plain text if markdown file not found
-                document.getElementById('project-description-content').innerHTML = `<p>${project.description}</p>`;
+                // Fallback to short description if markdown file not found
+                document.getElementById('project-description-content').innerHTML = `<p>${project.shortDescription || 'No description available.'}</p>`;
             }
         } catch (error) {
             console.error('Error loading markdown:', error);
-            document.getElementById('project-description-content').innerHTML = `<p>${project.description}</p>`;
+            document.getElementById('project-description-content').innerHTML = `<p>${project.shortDescription || 'No description available.'}</p>`;
         }
     } else {
-        // If not a markdown file, display as plain text
-        document.getElementById('project-description-content').innerHTML = `<p>${project.description}</p>`;
+        // If not a markdown file, display short description
+        document.getElementById('project-description-content').innerHTML = `<p>${project.shortDescription || 'No description available.'}</p>`;
     }
     
     // Update page title
