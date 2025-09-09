@@ -224,7 +224,7 @@ function loadProjectDetail() {
     document.getElementById('project-detail').innerHTML = projectDetailHtml;
     
     // Update page title
-    document.title = `${project.title} - Sangguniang Kabataan ng Matimbo`;
+    document.title = `${project.title} - SK Matimbo`;
 }
 
 // Open image modal (placeholder function for future enhancement)
