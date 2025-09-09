@@ -509,6 +509,15 @@ body {
         gap: 1rem;
     }
     
+    .award-clickable {
+        transition: all 0.3s ease;
+    }
+    
+    .award-clickable:active {
+        background: #f0f4f8;
+        transform: scale(0.98);
+    }
+    
     .award-icon {
         font-size: 3.5rem;
         width: 90px;
@@ -517,6 +526,10 @@ body {
     
     .award-info h4 {
         justify-content: center;
+    }
+    
+    .award-link-icon {
+        display: none !important;
     }
     
     .award-meta {
@@ -529,6 +542,10 @@ body {
     .award-icon {
         font-size: 3rem;
         width: 80px;
+    }
+    
+    .award-link-icon {
+        display: none !important;
     }
 }
 
@@ -544,6 +561,20 @@ body {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+}
+
+/* Desktop: Keep arrow visible and functional */
+@media (min-width: 769px) {
+    .award-link-icon {
+        display: inline-block !important;
+    }
+}
+
+/* Mobile only: Make box clickable */
+@media (max-width: 768px) {
+    .award-clickable {
+        cursor: pointer;
+    }
 }
 
 .award-link-icon {

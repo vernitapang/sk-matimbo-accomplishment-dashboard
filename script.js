@@ -233,6 +233,13 @@ function loadAwards() {
         const awardItem = document.createElement('div');
         awardItem.className = 'award-item';
         
+        // Add click handler only on mobile devices
+        if (award.link && window.innerWidth <= 768) {
+            awardItem.style.cursor = 'pointer';
+            awardItem.onclick = () => window.open(award.link, '_blank');
+            awardItem.className += ' award-clickable';
+        }
+        
         awardItem.innerHTML = `
             <div class="award-icon">
                 ${award.icon}
@@ -240,7 +247,7 @@ function loadAwards() {
             <div class="award-info">
                 <h4>
                     ${award.title}
-                    ${award.link ? `<i class="fas fa-arrow-right award-link-icon" onclick="window.open('${award.link}', '_blank')" title="View award details"></i>` : ''}
+                    ${award.link ? `<i class="fas fa-arrow-right award-link-icon" onclick="event.stopPropagation(); window.open('${award.link}', '_blank')" title="View award details"></i>` : ''}
                 </h4>
                 <p class="award-organization">${award.organization}</p>
                 <p class="award-description">${award.description}</p>
